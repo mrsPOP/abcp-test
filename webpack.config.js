@@ -4,18 +4,18 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: path.resolve(__dirname, "src", "index.js"),
   output: {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "build"),
     clean: true,
   },
-  devtool: "inline-source-map",
-  devServer: {
-    port: 9000,
-    open: true,
-  },
+  // devtool: "inline-source-map",
+  // devServer: {
+  //   port: 9000,
+  //   open: true,
+  // },
   module: {
     rules: [
       {
