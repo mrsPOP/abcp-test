@@ -60,9 +60,6 @@ $radius: 5px;
         160px
       );
     gap: 15px;
-    grid-template-areas:
-      "one two three"
-      "four four five";
   }
 
   &__green-box {
@@ -82,29 +79,8 @@ $radius: 5px;
       content: counter(green-box-counter);
     }
 
-    &:first-child {
-      inline-size: clamp(39px, 100%, 390px);
-      grid-area: one;
-    }
-
-    &:nth-child(2) {
-      inline-size: clamp(59px, 100%, 590px);
-      grid-area: two;
-    }
-
-    &:nth-child(3) {
-      inline-size: clamp(16px, 100%, 160px);
-      grid-area: three;
-    }
-
     &:nth-child(4) {
-      inline-size: clamp(99.5px, 100%, 995px);
-      grid-area: four;
-    }
-
-    &:nth-child(5) {
-      inline-size: clamp(16px, 100%, 160px);
-      grid-area: five;
+      grid-column: 1 / 3;
     }
   }
 
